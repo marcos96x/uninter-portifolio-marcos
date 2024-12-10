@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    padding: 15px;
+    background-color: #ddd;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-right: 15px;
+    border-bottom: 1px solid transparent;
+    transition-duration: 0.3s;
+    color: #333;
+}
+
+header ul li.active, header ul li:hover {
+    font-weight: bold;
+    border-bottom: 1px solid #222;
+}
+
+header ul li a, header ul li a:visited {
+    color: #333;
+    text-decoration: none;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.gif-home {
+    width: 300px;
+}
+
+form {
+    width: 500px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+form .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+form .form-group label {
+    font-size: 16px;
+    font-weight: bold;    
+}
+
+/* estilizando campos do formulário  */
+form .form-group input, form .form-group input:focus-visible, form .form-group textarea, form .form-group textarea:focus-visible {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition-duration: 0.3s;
+}
+
+/* removendo borda padrão do browser  */
+form .form-group input:focus-visible, form .form-group textarea:focus-visible {    
+    border: 1px solid #aaa;
+}
+
+form .btn-form {
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 8px;
+
+}
